@@ -31,4 +31,4 @@ jobs:
           with:
             GITHUB_TOKEN: ${{ secrets.GITHUBPAGESTOKEN }}
             BRANCH: github-pages
-            FOLDER: dist/Web/wwwroot
+            FOLDER: release/wwwroot
