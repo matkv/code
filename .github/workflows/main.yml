@@ -26,12 +26,9 @@ jobs:
         - name: Publish .NET Core Project
           run: dotnet publish code.csproj -c Release -o release --nologo
           
-        - name: Deploy
-          uses: peaceiris/actions-gh-pages@v3
-          with: 
-            personal_token: ${{ secrets.GITHUBPAGESTOKEN }}
-            external_repository: matkv/code
-            publish_dir: ./release/wwwroot
-            user_name: matkv
-            user_email: matkobusljeta@gmail.com
-            publish_branch: github-pages
+        - name: Commit wwwroot to GitHub Pages
+          uses: JamesIves/github-pages-deploy-action@3.7.1
+          with:
+            GITHUB_TOKEN: ${{ secrets.GITHUBPAGESTOKEN }}
+            BRANCH: github-pages
+            FOLDER: dist/Web/wwwroot
