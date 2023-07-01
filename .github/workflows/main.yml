@@ -34,4 +34,4 @@ jobs:
             publish_dir: ./release/wwwroot
             user_name: matkv
             user_email: matkobusljeta@gmail.com
-            publish_branch: master
+            publish_branch: github-pages
