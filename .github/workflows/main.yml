@@ -30,7 +30,7 @@ jobs:
           uses: peaceiris/actions-gh-pages@v3
           with: 
             personal_token: ${{ secrets.GITHUBPAGESTOKEN }}
-            external_repository: matkv/code.matkv.github.io
+            external_repository: matkv/code
             publish_dir: ./release/wwwroot
             user_name: matkv
             user_email: matkobusljeta@gmail.com
